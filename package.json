@@ -1,13 +1,16 @@
 {
   "name": "weex-file-selector-h5",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "weex-file-selector-h5 提供 weex 选择文件的组件。仅支持h5。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "weex",
-
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muzin/weex-file-selector-h5.git"
+  },
   "keywords": [
     "weex",
     "Vue",
