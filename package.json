@@ -1,6 +1,6 @@
 {
   "name": "weex-file-selector-h5",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "weex-file-selector-h5 提供 weex 选择文件的组件。仅支持h5。",
   "main": "index.js",
   "scripts": {

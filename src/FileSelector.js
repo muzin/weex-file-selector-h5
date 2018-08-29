@@ -51,13 +51,16 @@ FileSelector.prototype = {
   _addEvent: function () {
     fileContainter.onchange = function () {
       var files = fileContainter.files
-      document.body.removeChild(fileContainter)
       changeCallback(files)
     }
   },
   
   _show: function () {
     fileContainter.click()
+    var timer = setTimeout(function(){
+        clearTimeout(timer)
+        document.body.removeChild(fileContainter)
+    }, 300)
   }
   
 }
