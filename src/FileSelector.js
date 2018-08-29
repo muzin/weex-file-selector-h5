@@ -51,6 +51,7 @@ FileSelector.prototype = {
   _addEvent: function () {
     fileContainter.onchange = function () {
       var files = fileContainter.files
+      document.body.removeChild(fileContainter)
       changeCallback(files)
     }
   },
