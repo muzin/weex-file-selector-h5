@@ -78,6 +78,4 @@ file_selector.open({
 
 })
 
-var file =
-
 ```
