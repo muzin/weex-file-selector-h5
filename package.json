@@ -1,6 +1,6 @@
 {
   "name": "weex-file-selector-h5",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "weex-file-selector-h5 提供 weex 选择文件的组件。仅支持h5。",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "file",
     "selector",
     "html5",
-    "h5"
+    "h5",
+    "camera",
+    "camcorder",
+    "microphone"
   ],
   "author": "Sirius",
   "license": "MIT"

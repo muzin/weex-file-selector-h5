@@ -1,3 +1,6 @@
+
+import { Capture } from './capture_enum'
+
 let Configs, changeCallback, fileContainter
 export default function FileSelector(configs, callback) {
   
@@ -43,6 +46,11 @@ FileSelector.prototype = {
       }
       if(Configs.accept){
         fileContainter.setAttribute('accept', Configs.accept)
+      }
+      if(!Configs.multiple                            // 没有设置 multiple
+          && Configs.capture                          // 设置了 capture
+          && ~Capture.indexOf(Configs.capture)){      // 设置的 capture 在 支持的类型中
+        fileContainter.setAttribute('capture', Configs.capture)
       }
     }
     document.body.append(fileContainter)
